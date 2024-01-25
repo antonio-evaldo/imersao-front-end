@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,600;9..40,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
 </head>
 
 <body>
@@ -25,7 +28,7 @@
         <nav class="sidebar__navigation">
             <div class="logo">
                 <a href="#">
-                    <img src="./assets/icons/logo-spotify.png" alt="Logo" />
+                    <img src="./src/assets/icons/logo-spotify.png" alt="Logo" />
                 </a>
             </div>
             <ul>
@@ -80,10 +83,44 @@
         </section>
     </div>
 
-    <footer class="disclaimer-premium">
-        <div>
-            Texto qualquer...
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
         </div>
+    </main>
+
+    <footer class="disclaimer-premium">
+        <div class="text">
+            <p class="disclaimer-premium__title">
+                Testar o Premium de graça
+            </p>
+            <p class="disclaimer-premium__subtitle">
+                Increva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de
+                crédito.
+            </p>
+        </div>
+
+        <button>Inscreva-se grátis</button>
     </footer>
 </body>
 

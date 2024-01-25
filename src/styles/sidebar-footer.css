@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    font-family: var(--font-dm-sans);
+}
+
 .sidebar {
     position: fixed;
     left: 0;
@@ -38,8 +43,8 @@
 .sidebar nav ul li a {
     color: #b3b3b3;
     font-weight: 600;
-    font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+    font-size: 0.875rem; /* 14px */
+    /* 1rem = 16px */
 }
 
 .sidebar nav ul li .fa {
@@ -77,7 +82,6 @@
     border: 0px;
     font-size: 14px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -123,7 +127,6 @@
 .section-playlist__content .text {
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist__content .title {
@@ -140,7 +143,6 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -182,8 +184,38 @@
     bottom: 0;
     right: 0;
     left: 0;
-    text-align: center;
+    color: #fff;
     padding: 15px 40px;
     background: linear-gradient(to right, #ae2896, #509bf5);
-    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.disclaimer-premium .text {
+    flex-shrink: 0;
+}
+
+.disclaimer-premium .disclaimer-premium__title {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 40px;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
 }
